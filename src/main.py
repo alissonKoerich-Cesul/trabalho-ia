@@ -38,13 +38,13 @@ def coletar_dados():
 
     print("\n8. Histórico de falhas:")
     falhas = []
-    if input("   - Já teve falha no sensor de oxigênio? (s/n): ").strip().lower() == 's':
+    if input("   - Já teve falhas no motor ou perca de potencia? (s/n): ").strip().lower() == 's':
         falhas.append("sensor_oxigenio")
     if input("   - Já teve superaquecimento? (s/n): ").strip().lower() == 's':
         falhas.append("superaquecimento")
     if input("   - Já teve pane elétrica? (s/n): ").strip().lower() == 's':
         falhas.append("pane_eletrica")
-    if input("   - Já teve falha na injeção eletrônica? (s/n): ").strip().lower() == 's':
+    if input("   - Já aconteceu da luz da injeção acender no painel? (s/n): ").strip().lower() == 's':
         falhas.append("falha_injecao")
     if input("   - Já abasteceu com combustível de origem duvidosa? (s/n): ").strip().lower() == 's':
         falhas.append("combustivel_ruim")
